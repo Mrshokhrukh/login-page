@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import lock from "../../assets/Vector.png";
 import show from "../../assets/Vector (2).png";
 import rt from "../../assets/Vector (1).png";
+
 import LoginWithField from "../LoginWithField/LoginWithField";
 import InputField from "../InputFields/InputField";
 type CardCenterProps = {};
 
 const CardCenter: React.FC<CardCenterProps> = () => {
-  const [checked, setChecked] = useState(true);
-
   return (
     <section className="flex flex-col gap-[16px]">
       <div className="space-y-2">
@@ -25,11 +24,7 @@ const CardCenter: React.FC<CardCenterProps> = () => {
         <InputField labelText="Password" pswIconLock={lock} pswIconShow={show} />
       </div>
       <div className="flex items-center space-x-2">
-        <input
-          type="checkbox"
-          id="remember"
-          className={``}
-        />
+        <input type="checkbox" id="remember" className={``} />
         <label htmlFor="remember" className="text-sm">
           Remember for 30 days
         </label>
