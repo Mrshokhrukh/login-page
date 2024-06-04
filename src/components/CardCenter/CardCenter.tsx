@@ -35,7 +35,7 @@ const CardCenter: React.FC<CardCenterProps> = () => {
        flex items-center justify-center gap-2 w-full 
        h-[36px] rounded-[128px] transition-all
         bg-btn-c hover:border-cyan-500
-         hover:bg-black hover:text-cyan-500"
+         hover:bg-slate-700"
       >
         Sign in
         <img src={rt} alt="" />
