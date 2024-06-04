@@ -2,7 +2,7 @@ import React from "react";
 import lock from "../../assets/Vector.png";
 import show from "../../assets/Vector (2).png";
 import rt from "../../assets/Vector (1).png";
-
+import { Button } from "../../../@/components/ui/button";
 import LoginWithField from "../LoginWithField/LoginWithField";
 import InputField from "../InputFields/InputField";
 type CardCenterProps = {};
@@ -29,7 +29,7 @@ const CardCenter: React.FC<CardCenterProps> = () => {
           Remember for 30 days
         </label>
       </div>
-      <button
+      <Button
         className="text-white text-sm 
       font-semibold border-[0.5px] border-btn-c
        flex items-center justify-center gap-2 w-full 
@@ -39,7 +39,7 @@ const CardCenter: React.FC<CardCenterProps> = () => {
       >
         Sign in
         <img src={rt} alt="" />
-      </button>
+      </Button>
       <div className="text-sm flex justify-center items-center mt-2 gap-2">
         <p>No account ?</p>
         <a href={""} className="text-btn-c">
