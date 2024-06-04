@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Input } from "../../../@/components/ui/input";
 import { Label } from "../../../@/components/ui/label";
+import hide from "../../assets/pngwing.com.png";
 
 type InputFieldProps = {
   labelText: string;
@@ -10,6 +11,7 @@ type InputFieldProps = {
 
 const InputField: React.FC<InputFieldProps> = ({ labelText, pswIconShow, pswIconLock }) => {
   const [showPsw, setShowPsw] = useState(false);
+
   return (
     <div className="grid w-full max-w-sm items-center gap-1.5">
       <Label htmlFor="email" className="font-semibold text-sm">
@@ -27,12 +29,14 @@ const InputField: React.FC<InputFieldProps> = ({ labelText, pswIconShow, pswIcon
           placeholder={`Enter your ${`${labelText}`.toLowerCase()}`}
           className="focus:outline-none"
         />
-        <img
-          src={pswIconShow}
-          alt=""
-          onClick={() => setShowPsw(!showPsw)}
-          className="cursor-pointer"
-        />
+        {pswIconShow && (
+          <img
+            src={showPsw ? hide : pswIconShow}
+            alt=""
+            onClick={() => setShowPsw(!showPsw)}
+            className="cursor-pointer w-[18px]"
+          />
+        )}
       </div>
     </div>
   );
