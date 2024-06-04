@@ -1,4 +1,5 @@
-# React + TypeScript + Vite
+<h1> <a href="https://auth-page-ochre.vercel.app/"> Link - Login page ui</a> </h1>
+# React vite + TypeScript + Tailwind + shadcn
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
